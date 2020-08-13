@@ -55,3 +55,7 @@ p.bmi {
     border-radius: 4px;
     font: 700 20px 'Nunito Sans'
 }
+
+.heightSection > .form-control, .weightSection > .form-control {
+    width: 32%;
+}
