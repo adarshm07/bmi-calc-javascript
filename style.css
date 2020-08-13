@@ -59,3 +59,9 @@ p.bmi {
 .heightSection > .form-control, .weightSection > .form-control {
     width: 32%;
 }
+
+.labelBMI {
+    position: relative;
+    top: 9px;
+    margin: 0 10px;
+}

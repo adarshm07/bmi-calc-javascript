@@ -12,19 +12,23 @@
   <div class="container">
     <div class="bmicalc">
       <h2>BMI Calculator</h2>
+      
+      <div class="labelBMI">
+        <label for="height">Height</label>
+      </div>
       <div class="heightSection">
         <!-- Height in cm -->
-        <div class="labelBMI">
-        <label for="height">Height</label>
-        </div>
+       
         <input type="range" class="form-control-range" id="isHeightRange" step="1" min="40" max="225" value="178" oninput="isUserHeight(this)"/>
         <input type="text" class="form-control" name="" id="isHeight" oninput="isUserHeight(this)">
       </div>
+
+      <div class="labelBMI">
+        <label for="weight">Weight</label>
+        </div>
       <div class="weightSection">
         <!-- Weight in kg -->
-        <div class="labelBMI">
-          <label for="weight">Weight</label>
-          </div>
+        
         <input type="range" class="form-control-range" id="isWeightRange" step="1" min="1" max="150" value="68" oninput="isUserWeight(this)"/>
         <input type="text" class="form-control" name="" id="isWeight" oninput="isUserWeight(this)">
       </div>
