@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  </head>
+  <body>
+
+  <div class="container">
+    <div class="bmicalc">
+      <h2>BMI Calculator</h2>
+      <div class="heightSection">
+        <!-- Height in cm -->
+        <input type="range" class="form-control-range" id="isHeightRange" step="1" min="40" max="225" value="178" oninput="isUserHeight(this)"/>
+        <input type="text" class="form-control" name="" id="isHeight" oninput="isUserHeight(this)">
+      </div>
+      <div class="weightSection">
+        <!-- Weight in kg -->
+        <input type="range" class="form-control-range" id="isWeightRange" step="1" min="1" max="150" value="68" oninput="isUserWeight(this)"/>
+        <input type="text" class="form-control" name="" id="isWeight" oninput="isUserWeight(this)">
+      </div>
+<div class="btnFindBMI">
+  <button id="btnBMI" class="btn btn-primary">Find BMI</button>
+</div>
+
+      <p class="bmi">BMI:
+        <span id="isBMI">21.46</span> | <span id="isHealthy">Healthy!</span>
+      </p>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

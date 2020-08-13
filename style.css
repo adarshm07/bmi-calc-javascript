@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+
+.container {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    /* height: 100vh; */
+    margin: 40px 0;
+}   
+
+h2 {
+    text-align: center;
+    font: 700 24px 'Nunito Sans';
+    text-decoration: underline;
+}
+
+.bmicalc {
+    display: block;
+    width: 600px;
+    border: 2px solid #f4f4f4;
+    padding: 20px;
+    border-radius: 4px;
+}
+
+.heightSection, .weightSection {
+    display: flex;
+    min-width: 300px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+input#isHeightRange, input#isWeightRange {
+    margin: 0 10px;
+}
+
+.btnFindBMI {
+    margin: 20px 10px;
+}
+
+span#isHealthy {
+    color: #001682;
+    font-size: 16px;
+}
+
+span#isBMI {
+    color: #d800ff;
+}
+
+p.bmi {
+    background: lightgray;
+    padding: 10px;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 4px;
+    font: 700 20px 'Nunito Sans'
+}
